@@ -24,3 +24,42 @@ body{font-family:Roboto,Inter,'Helvetica Neue',Arial,sans-serif;background:#0f0f
 /* Generated lotus-and-heart identity, shown in white on the dark masthead. */
 .movement-header .wordmark,.expanded-footer .wordmark{display:inline-block;line-height:0;flex-shrink:0}.brand-logo{display:block;width:170px;height:auto;max-width:100%;filter:brightness(0) invert(1)}.footer-brand .brand-logo{width:190px}.brand-row{padding-block:15px}.brand-row .brand-logo{width:165px}
 @media(max-width:720px){.brand-row{padding-block:12px}.brand-row .brand-logo{width:135px}.footer-brand .brand-logo{width:170px}.utility-links{gap:14px}}
+
+/* The Lovana story: public narrative, shared meals, and participation. */
+.about-masthead{background:#ffa477;color:#111;padding-block:55px}
+.about-masthead .eyebrow{color:#111}
+.about-masthead h1{font-size:64px;max-width:850px}
+.about-masthead .intro{max-width:650px;color:#222;font-size:21px;margin-bottom:0}
+.origin-story{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px 70px}
+.origin-story h2{font-size:36px}
+.story-copy{max-width:660px}
+.story-copy p:last-child{margin-bottom:0}
+.story-wide{grid-column:1 / -1}
+.story-wide img{width:100%;height:auto;border-radius:6px}
+.hospitality-story{background:#222}
+.hospitality-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:60px;align-items:center}
+.hospitality-grid img{border-radius:6px}
+.hospitality-grid h2{font-size:38px}
+.values-heading{max-width:750px;margin-bottom:35px}
+.story-values{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.story-values article{border-top:3px solid #ffa477;padding-top:20px}
+.value-number{display:block;color:#ffa477;font-size:13px;margin-bottom:16px}
+.story-values h3{font-size:27px}
+.story-values p{color:#ccc;margin-bottom:0}
+.next-chapter{background:#ffa477;color:#111}
+.next-chapter .tag{color:#222}
+.next-chapter-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+.next-chapter-grid h2{font-size:38px}
+.next-chapter a:not(.button):hover{color:#111}
+.next-chapter .button{background:#111;color:#ffa477}
+@media(max-width:900px){.origin-story,.next-chapter-grid{gap:30px}.hospitality-grid{gap:30px}.story-values{gap:25px}}
+@media(max-width:720px){
+ .about-masthead{padding-block:38px}
+ .about-masthead h1{font-size:40px}
+ .about-masthead .intro{font-size:17px}
+ .origin-story,.hospitality-grid,.next-chapter-grid,.story-values{grid-template-columns:1fr;gap:25px}
+ .origin-story h2,.hospitality-grid h2,.next-chapter-grid h2{font-size:30px}
+ .hospitality-grid figure{order:2}
+ .story-values{gap:30px}
+ .values-heading{margin-bottom:28px}
+}
