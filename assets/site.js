@@ -30,7 +30,7 @@ if (givingStatus && LOVANA.donationUrl) {
       const link = document.createElement('a');
       link.className = 'button';
       link.href = url.href;
-      link.textContent = 'Make a donation ↗';
+      link.textContent = 'Donate to us ↗';
       const note = document.createElement('p');
       note.className = 'fine';
       note.textContent = LOVANA.donationProvider
@@ -39,4 +39,9 @@ if (givingStatus && LOVANA.donationUrl) {
       givingStatus.replaceChildren(link, note);
     }
   } catch { /* Keep the honest unavailable state if the URL is invalid. */ }
+}
+
+// Preserve the project link shared before programs moved to their own page.
+if ((window.location.pathname.endsWith('/') || window.location.pathname.endsWith('/index.html')) && window.location.hash === '#transcendental-water') {
+  window.location.replace('programs.html#transcendental-water');
 }
